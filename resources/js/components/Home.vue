@@ -1,35 +1,40 @@
 <template>
-    <div class="carousel-inner py-4">
-        <!-- Single item -->
-        <div class="carousel-item active">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4" v-for="product in products" :key="product.id">
-                        <div class="card">
-                            <img
-                                :src="product.image"
-                                class="card-img-top"
-                                alt="Waterfall"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">{{product.name}}</h5>
-                                <p class="card-text">{{product.description}}</p>
+    <div class="container">
+        <FormRegister></FormRegister>
+        <div class="carousel-inner py-4">
+            <!-- Single item -->
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4" v-for="product in products" :key="product.id">
+                            <div class="card">
+                                <img
+                                    :src="product.image"
+                                    class="card-img-top"
+                                    alt="Waterfall"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">{{product.name}}</h5>
+                                    <p class="card-text">{{product.description}}</p>
 
-                                <router-link class="btn btn-info" :to='{name: "edit", params: {id: product.id}}'>Editar</router-link>
-                                <button @click="deleteProduct(product.id)" type="button" class="btn btn-danger">Eliminar</button>
+                                    <router-link class="btn btn-info" :to='{name: "edit", params: {id: product.id}}'>Editar</router-link>
+                                    <button @click="deleteProduct(product.id)" type="button" class="btn btn-danger">Eliminar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 </template>
 
 <script>
+import FormRegister from "./products/FormRegister";
 export default {
     name: "Home",
+    components: {FormRegister},
     data() {
         return {
             products: [
