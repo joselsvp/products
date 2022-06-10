@@ -14,7 +14,7 @@ const routes = [
     {
         path: '/edit/:id',
         name: 'edit',
-        component: () => import('./components/products/EditProduct')
+        component: () => import('./components/products/Edit')
     },
 ]
 const router = createRouter({

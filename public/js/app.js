@@ -20038,7 +20038,7 @@ var routes = [{
   path: '/edit/:id',
   name: 'edit',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_components_products_EditProduct_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/products/EditProduct */ "./resources/js/components/products/EditProduct.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_components_products_Edit_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/products/Edit */ "./resources/js/components/products/Edit.vue"));
   }
 }];
 var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_0__.createRouter)({
@@ -41399,7 +41399,7 @@ function compileToFunction(template, options) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_Home_vue":1,"resources_js_components_Contact_vue":1,"resources_js_components_products_EditProduct_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_Home_vue":1,"resources_js_components_Contact_vue":1,"resources_js_components_products_Edit_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
