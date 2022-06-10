@@ -12,7 +12,7 @@ const routes = [
         component: () => import('./components/Contact')
     },
     {
-        path: '/edit',
+        path: '/edit/:id',
         name: 'edit',
         component: () => import('./components/products/EditProduct')
     },

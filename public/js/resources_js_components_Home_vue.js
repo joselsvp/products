@@ -29,6 +29,11 @@ __webpack_require__.r(__webpack_exports__);
         image: 'https://via.placeholder.com/150'
       }]
     };
+  },
+  methods: {
+    deleteProduct: function deleteProduct(product_id) {
+      console.log("eliminando producto");
+    }
   }
 });
 
@@ -72,20 +77,9 @@ var _hoisted_9 = {
   "class": "card-text"
 };
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#!",
-  "class": "btn btn-info"
-}, "Editar", -1
-/* HOISTED */
-);
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Editar");
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#!",
-  "class": "btn btn-danger"
-}, "Eliminar", -1
-/* HOISTED */
-);
-
+var _hoisted_11 = ["onClick"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
 
@@ -104,11 +98,31 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.description), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      "class": "btn btn-info",
       to: {
-        name: '',
-        params: {}
+        name: "edit",
+        params: {
+          id: product.id
+        }
       }
-    }), _hoisted_10, _hoisted_11])])]);
+    }, {
+      "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+        return [_hoisted_10];
+      }),
+      _: 2
+      /* DYNAMIC */
+
+    }, 1032
+    /* PROPS, DYNAMIC_SLOTS */
+    , ["to"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $options.deleteProduct(product.id);
+      },
+      type: "button",
+      "class": "btn btn-danger"
+    }, "Eliminar", 8
+    /* PROPS */
+    , _hoisted_11)])])]);
   }), 128
   /* KEYED_FRAGMENT */
   ))])])])]);

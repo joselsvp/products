@@ -15,9 +15,8 @@
                                 <h5 class="card-title">{{product.name}}</h5>
                                 <p class="card-text">{{product.description}}</p>
 
-                                <router-link :to="{name: '', params: {}}"></router-link>
-                                <a href="#!" class="btn btn-info">Editar</a>
-                                <a href="#!" class="btn btn-danger">Eliminar</a>
+                                <router-link class="btn btn-info" :to='{name: "edit", params: {id: product.id}}'>Editar</router-link>
+                                <button @click="deleteProduct(product.id)" type="button" class="btn btn-danger">Eliminar</button>
                             </div>
                         </div>
                     </div>
@@ -49,6 +48,11 @@ export default {
                     image: 'https://via.placeholder.com/150'
                 },
             ]
+        }
+    },
+    methods: {
+        deleteProduct(product_id){
+            console.log("eliminando producto");
         }
     }
 }

@@ -20035,7 +20035,7 @@ var routes = [{
     return __webpack_require__.e(/*! import() */ "resources_js_components_Contact_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/Contact */ "./resources/js/components/Contact.vue"));
   }
 }, {
-  path: '/edit',
+  path: '/edit/:id',
   name: 'edit',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_components_products_EditProduct_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/products/EditProduct */ "./resources/js/components/products/EditProduct.vue"));
