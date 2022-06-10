@@ -12,7 +12,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Home"
+  name: "Home",
+  data: function data() {
+    return {
+      products: [{
+        id: 1,
+        name: 'Producto 1',
+        description: 'This is a first item',
+        price: 20,
+        image: 'https://via.placeholder.com/150'
+      }, {
+        id: 2,
+        name: 'Producto 2',
+        description: 'This is a second item',
+        price: 10,
+        image: 'https://via.placeholder.com/150'
+      }]
+    };
+  }
 });
 
 /***/ }),
@@ -32,15 +49,69 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "carousel-inner py-4"
 };
+var _hoisted_2 = {
+  "class": "carousel-item active"
+};
+var _hoisted_3 = {
+  "class": "container"
+};
+var _hoisted_4 = {
+  "class": "row"
+};
+var _hoisted_5 = {
+  "class": "card"
+};
+var _hoisted_6 = ["src"];
+var _hoisted_7 = {
+  "class": "card-body"
+};
+var _hoisted_8 = {
+  "class": "card-title"
+};
+var _hoisted_9 = {
+  "class": "card-text"
+};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"carousel-item active\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><div class=\"card\"><img src=\"https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp\" class=\"card-img-top\" alt=\"Waterfall\"><div class=\"card-body\"><h5 class=\"card-title\">Card title</h5><p class=\"card-text\"> Some quick example text to build on the card title and make up the bulk of the card&#39;s content. </p><a href=\"#!\" class=\"btn btn-primary\">Button</a></div></div></div><div class=\"col-lg-4 d-none d-lg-block\"><div class=\"card\"><img src=\"https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp\" class=\"card-img-top\" alt=\"Sunset Over the Sea\"><div class=\"card-body\"><h5 class=\"card-title\">Card title</h5><p class=\"card-text\"> Some quick example text to build on the card title and make up the bulk of the card&#39;s content. </p><a href=\"#!\" class=\"btn btn-primary\">Button</a></div></div></div><div class=\"col-lg-4 d-none d-lg-block\"><div class=\"card\"><img src=\"https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp\" class=\"card-img-top\" alt=\"Sunset over the Sea\"><div class=\"card-body\"><h5 class=\"card-title\">Card title</h5><p class=\"card-text\"> Some quick example text to build on the card title and make up the bulk of the card&#39;s content. </p><a href=\"#!\" class=\"btn btn-primary\">Button</a></div></div></div></div></div></div>", 1);
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#!",
+  "class": "btn btn-info"
+}, "Editar", -1
+/* HOISTED */
+);
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"carousel-item\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4 col-md-12\"><div class=\"card\"><img src=\"https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp\" class=\"card-img-top\" alt=\"Fissure in Sandstone\"><div class=\"card-body\"><h5 class=\"card-title\">Card title</h5><p class=\"card-text\"> Some quick example text to build on the card title and make up the bulk of the card&#39;s content. </p><a href=\"#!\" class=\"btn btn-primary\">Button</a></div></div></div><div class=\"col-lg-4 d-none d-lg-block\"><div class=\"card\"><img src=\"https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp\" class=\"card-img-top\" alt=\"Storm Clouds\"><div class=\"card-body\"><h5 class=\"card-title\">Card title</h5><p class=\"card-text\"> Some quick example text to build on the card title and make up the bulk of the card&#39;s content. </p><a href=\"#!\" class=\"btn btn-primary\">Button</a></div></div></div><div class=\"col-lg-4 d-none d-lg-block\"><div class=\"card\"><img src=\"https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp\" class=\"card-img-top\" alt=\"Hot Air Balloons\"><div class=\"card-body\"><h5 class=\"card-title\">Card title</h5><p class=\"card-text\"> Some quick example text to build on the card title and make up the bulk of the card&#39;s content. </p><a href=\"#!\" class=\"btn btn-primary\">Button</a></div></div></div></div></div></div>", 1);
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"carousel-item\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4 col-md-12 mb-4 mb-lg-0\"><div class=\"card\"><img src=\"https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp\" class=\"card-img-top\" alt=\"Peaks Against the Starry Sky\"><div class=\"card-body\"><h5 class=\"card-title\">Card title</h5><p class=\"card-text\"> Some quick example text to build on the card title and make up the bulk of the card&#39;s content. </p><a href=\"#!\" class=\"btn btn-primary\">Button</a></div></div></div><div class=\"col-lg-4 mb-4 mb-lg-0 d-none d-lg-block\"><div class=\"card\"><img src=\"https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp\" class=\"card-img-top\" alt=\"Bridge Over Water\"><div class=\"card-body\"><h5 class=\"card-title\">Card title</h5><p class=\"card-text\"> Some quick example text to build on the card title and make up the bulk of the card&#39;s content. </p><a href=\"#!\" class=\"btn btn-primary\">Button</a></div></div></div><div class=\"col-lg-4 mb-4 mb-lg-0 d-none d-lg-block\"><div class=\"card\"><img src=\"https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp\" class=\"card-img-top\" alt=\"Purbeck Heritage Coast\"><div class=\"card-body\"><h5 class=\"card-title\">Card title</h5><p class=\"card-text\"> Some quick example text to build on the card title and make up the bulk of the card&#39;s content. </p><a href=\"#!\" class=\"btn btn-primary\">Button</a></div></div></div></div></div></div>", 1);
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#!",
+  "class": "btn btn-danger"
+}, "Eliminar", -1
+/* HOISTED */
+);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Single item "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Single item "), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Single item "), _hoisted_4]);
+  var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Single item "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.products, function (product) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      "class": "col-lg-4",
+      key: product.id
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      src: product.image,
+      "class": "card-img-top",
+      alt: "Waterfall"
+    }, null, 8
+    /* PROPS */
+    , _hoisted_6), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.name), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.description), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      to: {
+        name: '',
+        params: {}
+      }
+    }), _hoisted_10, _hoisted_11])])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])])]);
 }
 
 /***/ }),

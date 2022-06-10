@@ -11,6 +11,11 @@ const routes = [
         name: 'contact',
         component: () => import('./components/Contact')
     },
+    {
+        path: '/edit',
+        name: 'edit',
+        component: () => import('./components/products/EditProduct')
+    },
 ]
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),

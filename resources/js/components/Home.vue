@@ -4,56 +4,20 @@
         <div class="carousel-item active">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" v-for="product in products" :key="product.id">
                         <div class="card">
                             <img
-                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp"
+                                :src="product.image"
                                 class="card-img-top"
                                 alt="Waterfall"
                             />
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">Button</a>
-                            </div>
-                        </div>
-                    </div>
+                                <h5 class="card-title">{{product.name}}</h5>
+                                <p class="card-text">{{product.description}}</p>
 
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="card">
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
-                                class="card-img-top"
-                                alt="Sunset Over the Sea"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">Button</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="card">
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp"
-                                class="card-img-top"
-                                alt="Sunset over the Sea"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">Button</a>
+                                <router-link :to="{name: '', params: {}}"></router-link>
+                                <a href="#!" class="btn btn-info">Editar</a>
+                                <a href="#!" class="btn btn-danger">Eliminar</a>
                             </div>
                         </div>
                     </div>
@@ -61,133 +25,32 @@
             </div>
         </div>
 
-        <!-- Single item -->
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card">
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-                                class="card-img-top"
-                                alt="Fissure in Sandstone"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">Button</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="card">
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
-                                class="card-img-top"
-                                alt="Storm Clouds"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">Button</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="card">
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
-                                class="card-img-top"
-                                alt="Hot Air Balloons"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Single item -->
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <div class="card">
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
-                                class="card-img-top"
-                                alt="Peaks Against the Starry Sky"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">Button</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-                        <div class="card">
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
-                                class="card-img-top"
-                                alt="Bridge Over Water"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">Button</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-                        <div class="card">
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
-                                class="card-img-top"
-                                alt="Purbeck Heritage Coast"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Home"
+    name: "Home",
+    data() {
+        return {
+            products: [
+                {
+                id: 1,
+                name: 'Producto 1',
+                description: 'This is a first item',
+                price: 20,
+                image: 'https://via.placeholder.com/150'
+                },
+                {
+                    id: 2,
+                    name: 'Producto 2',
+                    description: 'This is a second item',
+                    price: 10,
+                    image: 'https://via.placeholder.com/150'
+                },
+            ]
+        }
+    }
 }
 </script>
 
