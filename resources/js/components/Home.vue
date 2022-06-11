@@ -62,6 +62,9 @@ export default {
     methods: {
         deleteProduct(product_id){
             console.log("eliminando producto");
+            axios.delete('api/products/' + product_id, this.product).then((response) => {
+                this.showProducts()
+            })
         },
         showProducts(){
             console.log('dscsd')
