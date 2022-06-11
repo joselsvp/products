@@ -32,11 +32,13 @@
 
 <script>
 import FormRegister from "./products/FormRegister";
+import axios from "axios";
 export default {
     name: "Home",
     components: {FormRegister},
     data() {
         return {
+            /*
             products: [
                 {
                 id: 1,
@@ -53,12 +55,24 @@ export default {
                     image: 'https://via.placeholder.com/150'
                 },
             ]
+             */
+            products: {}
         }
     },
     methods: {
         deleteProduct(product_id){
             console.log("eliminando producto");
+        },
+        showProducts(){
+            console.log('dscsd')
+            axios.get('api/products', this.product).then((response) => {
+                this.products = response.data.products
+                console.log(this.products);
+            })
         }
+    },
+    created() {
+        this.showProducts()
     }
 }
 </script>

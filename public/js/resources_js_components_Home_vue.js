@@ -12,6 +12,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _products_FormRegister__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./products/FormRegister */ "./resources/js/components/products/FormRegister.vue");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Home",
@@ -20,25 +23,43 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      products: [{
-        id: 1,
-        name: 'Producto 1',
-        description: 'This is a first item',
-        price: 20,
-        image: 'https://via.placeholder.com/150'
-      }, {
-        id: 2,
-        name: 'Producto 2',
-        description: 'This is a second item',
-        price: 10,
-        image: 'https://via.placeholder.com/150'
-      }]
+      /*
+      products: [
+          {
+          id: 1,
+          name: 'Producto 1',
+          description: 'This is a first item',
+          price: 20,
+          image: 'https://via.placeholder.com/150'
+          },
+          {
+              id: 2,
+              name: 'Producto 2',
+              description: 'This is a second item',
+              price: 10,
+              image: 'https://via.placeholder.com/150'
+          },
+      ]
+       */
+      products: {}
     };
   },
   methods: {
     deleteProduct: function deleteProduct(product_id) {
       console.log("eliminando producto");
+    },
+    showProducts: function showProducts() {
+      var _this = this;
+
+      console.log('dscsd');
+      axios__WEBPACK_IMPORTED_MODULE_1___default().get('api/products', this.product).then(function (response) {
+        _this.products = response.data.products;
+        console.log(_this.products);
+      });
     }
+  },
+  created: function created() {
+    this.showProducts();
   }
 });
 
@@ -267,8 +288,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.product.price]])]), _hoisted_7], 32
   /* HYDRATE_EVENTS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.product), 1
-  /* TEXT */
   )]);
 }
 
